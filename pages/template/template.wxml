@@ -1,0 +1,5 @@
+<view>
+  <label for=''></label>
+  <textarea id='' placeholder="报课模板填写" auto-height/>
+  <button size="3">提交</button>
+</view>
