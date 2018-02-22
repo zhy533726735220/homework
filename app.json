@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/homework/homework",
     "pages/template/template",
+    "pages/test/test",
     "pages/logs/logs"
   ],
   "window":{

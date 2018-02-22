@@ -1,0 +1,39 @@
+.container {
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    justify-content: flex-start;
+}
+  .del_btn {
+  float: right;
+}
+ .edit_btn {
+   
+}   
+.template-list {
+    width: 100%;
+    box-sizing: border-box;
+}
+.template-list-first {
+  width:100%;
+  border-top: 20rpx solid #EEEEEE;
+  padding-bottom: 5rpx;
+}
+.template-item {
+  width: 100%;
+  margin-top: 10rpx;
+  /* display: flex;  */
+  align-items:  center;
+  /* background-color:#FAEBD7; */
+} 
+
+
+.template-item-not-first {
+  width:100%;
+  padding-bottom: 5rpx;
+}
+
+.template-type{
+  padding-bottom: 5rpx;
+}

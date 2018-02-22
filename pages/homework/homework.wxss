@@ -1,0 +1,7 @@
+ .container {
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    justify-content: flex-start;
+} 

@@ -1,3 +1,10 @@
-<view class="section">
-  <button id='template_btn' bindtap="getTemplate">模板</button>
+<view class="container">
+  <button id='template_btn' bindtap="getTemplate">模板选择</button>
+  <form bindsubmit="bindFormSubmit">
+      <picker mode="selector" range="{{array}}" value="{{index}}" name='picker' bindchange='listenerPickerSelected'>
+        <text>报课类型选择: {{array[index]}}</text>
+      </picker>
+      <textarea cols="10" value='{{homework}}'/>
+      <button form-type="submit"> 提交 </button>
+    </form>
 </view>

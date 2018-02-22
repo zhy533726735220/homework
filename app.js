@@ -35,5 +35,12 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+
+  getId: (function () {
+    var start = 1;
+    return function () {
+      return start++;
+    }
+  })
 })

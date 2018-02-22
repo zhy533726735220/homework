@@ -1,5 +1,26 @@
-<view>
-  <label for=''></label>
-  <textarea id='' placeholder="报课模板填写" auto-height/>
-  <button size="3">提交</button>
+<view class='container'>
+  <view class='template-list' id="{{item.name}}" wx:for="{{templateData}}" wx:key="templateData">
+    <view class='template-item' wx:if="{{item.id != null}}">
+      <view class='template-type'>
+        <text>{{item.templateType}}</text>
+      </view>
+      <text>{{item.value}}</text>
+      <view class='template-item'>
+        <view class='template-item-not-first'/>
+        <button id='{{item.id}}' class='select_btn' size="mini" bindtap="getSelect">选择</button>
+        <button id='{{item.id}}' class='del_btn' size="mini" bindtap="getDel">删除</button>
+        <button id='{{item.id}}' class='edit_btn' size="mini" bindtap="getEdit">编辑</button>    
+      </view>
+    </view>
+    <view class='template-list-first'/>
+  </view>
+  <view>
+    <form bindsubmit="bindFormSubmit">
+      <picker mode="selector" range="{{array}}" value="{{index}}" name='picker' bindchange='listenerPickerSelected'>
+        <text>报课类型选择: {{array[index]}}</text>
+      </picker>
+      <textarea id='template_textarea' placeholder="报课模板填写" cols="10" name="textarea" value='{{templateDataNow}}'/>
+      <button form-type="submit"> 提交 </button>
+    </form>
+  </view>
 </view>
