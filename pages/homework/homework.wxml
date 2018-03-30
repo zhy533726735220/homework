@@ -1,10 +1,9 @@
-<view class="container">
-  <button id='template_btn' bindtap="getTemplate">模板选择</button>
+<view class="container">  
   <form bindsubmit="bindFormSubmit">
-      <picker mode="selector" range="{{array}}" value="{{index}}" name='picker' bindchange='listenerPickerSelected'>
-        <text>报课类型选择: {{array[index]}}</text>
-      </picker>
-      <textarea cols="10" value='{{homework}}'/>
-      <button form-type="submit"> 提交 </button>
-    </form>
+    <picker mode="selector" range="{{array}}" value="{{index}}" name='picker' bindchange='listenerPickerSelected'>
+      <text>报课类型选择: {{array[index]}}</text>
+    </picker>
+    <textarea cols="10" name="textarea" value='{{content}}'/>
+    <button form-type="submit"> 提交 </button>
+  </form>
 </view>

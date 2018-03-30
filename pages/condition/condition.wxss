@@ -1,0 +1,30 @@
+ .container {
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    display: block;
+    justify-content: flex-start;
+} 
+.content-avatar{
+  padding-top: 20rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  float: left;
+}
+.content-list {
+  display: block;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.template-list-first {
+  width:100%;
+  border-top:20rpx solid #EEEEEE;
+  padding-bottom:5rpx;
+
+}

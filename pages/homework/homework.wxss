@@ -1,7 +1,47 @@
- .container {
-    padding-top: 40rpx;
+.container {
+    padding-top: 140rpx;
     padding-bottom: 40rpx;
     padding-left: 40rpx;
     padding-right: 40rpx;
     justify-content: flex-start;
 } 
+.template_btn {
+    float:left;
+}
+.del_btn {
+  float: right;
+}
+ .edit_btn {
+   
+}   
+.template-list {
+    width: 100%;
+    box-sizing: border-box;
+}
+.template-list-first {
+  width:100%;
+  border-top: 20rpx solid #EEEEEE;
+  padding-bottom: 5rpx;
+}
+.template-item {
+  width: 100%;
+  margin-top: 10rpx;
+  /* display: flex;  */
+  align-items:  center;
+  /* background-color:#FAEBD7; */
+} 
+.content-avatar{
+  padding-top: 20rpx;
+}
+.content-list {
+  display: block;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  float: left;
+}

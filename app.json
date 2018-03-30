@@ -1,15 +1,51 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/homework/homework",
     "pages/template/template",
-    "pages/test/test",
+    "pages/condition/condition",
+    "pages/homework/homework",
+    "pages/info/info",
     "pages/logs/logs"
   ],
+
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/homework/homework",
+        "iconPath": "image/icons8-home-page-50.png",
+        "selectedIconPath": "image/icons8-home-page-50-active.png",
+        "text": "报课开始了"
+      },
+      {
+        "pagePath": "pages/template/template",
+        "iconPath": "image/icons8-book-50.png",
+        "selectedIconPath": "image/icons8-book-50-active.png",
+        "text": "模板选择"
+      },
+      {
+        "pagePath": "pages/condition/condition",
+        "iconPath": "image/icons8-12_00-50.png",
+        "selectedIconPath": "image/icons8-12_00-50-active.png",
+        "text": "报课情况"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "iconPath": "image/icons8-male-user-50.png",
+        "selectedIconPath": "image/icons8-male-user-50-actvie.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "报课",
     "navigationBarTextStyle":"black"
   }
+
 }

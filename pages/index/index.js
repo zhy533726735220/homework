@@ -4,18 +4,19 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '极乐归舟',
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../homework/homework'
+    wx.switchTab({
+      url: '../template/template'
     })
   },
   onLoad: function () {
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

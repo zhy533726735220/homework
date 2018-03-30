@@ -1,0 +1,27 @@
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+  </view>
+</block>
+<block wx:else>
+  <view class='container'>
+    <picker mode="selector" range="{{array}}" value="{{index}}" name='picker' bindchange='listenerPickerSelected'>
+      <text>{{array[index]}}:今天的情况</text>
+    </picker>
+    <view d="{{item.id}}" wx:for="{{userContent}}" wx:key="userContent">
+      <view class='content-avatar'>
+        <image class="userinfo-avatar" src="{{item.user.avatar}}" background-size="cover"></image>
+        <view>
+        <text>{{item.user.wxName}}</text>
+        </view>
+        <view>
+          <text>{{item.updateTime}}</text>
+        </view> 
+      </view>
+      <view class='content-list'>
+        <text>{{item.content}}</text>
+      </view>
+      <view class='template-list-first' />
+    </view>
+  </view>
+</block>
